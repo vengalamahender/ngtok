@@ -7,9 +7,10 @@ var OpenTok = require('../../lib/opentok');
 var app = express();
 
 var opentok;
-var apiKey = process.env.API_KEY;
-var apiSecret = process.env.API_SECRET;
-
+/*var apiKey = process.env.API_KEY;
+var apiSecret = process.env.API_SECRET;*/
+var apiKey = '46272032';
+var apiSecret = '0e0455aa223a02c8bb5dd3de17d5840aa56f45db';
 // Verify that the API Key and API Secret are defined
 if (!apiKey || !apiSecret) {
   console.log('You must specify API_KEY and API_SECRET environment variables');
@@ -25,7 +26,8 @@ app.use(bodyParser.urlencoded({
 
 // Starts the express app
 function init() {
-  app.listen(3000, function () {
+/* var app = connect().use(connect.static('public')).listen(3000, "0.0.0.0");*/
+   app.listen(3000, "0.0.0.0", function () {
     console.log('You\'re app is now ready at http://localhost:3000/');
   });
 }
