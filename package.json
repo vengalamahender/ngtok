@@ -39,6 +39,7 @@
   ],
   "main": "lib/opentok.js",
   "scripts": {
+    "start": "npm start",
     "test": "grunt",
     "lint": "./node_modules/.bin/eslint ./lib/ ./test/ ./sample/"
   },
